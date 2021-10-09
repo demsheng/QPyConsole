@@ -1,3 +1,23 @@
+# Qt5.12 Python3.9 构建python交互控制台
+
+fork from https://github.com/roozbehg/QPyConsole
+
+# Pre-Requisites / Versions used to build
+
+1) Qt 5.12 ( QTCore + QTWidgets)
+2) Python 3.9 + Dev and Libs  ( need headers (.h) and libraries (.so/.a) )
+
+# 版本修改
+
+    - 建立 cs 分支
+    - 2021-10-09 添加 statusbar
+
+
+![预览](https://github.com/demsheng/QPyConsole/raw/cs/screenshots/QPyConsole.png)
+
+
+-----------------------------
+
 # QPyConsole
 
 This simple project demonstrates the embedding of python interpreter into C++/QT application.

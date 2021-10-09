@@ -21,20 +21,20 @@ SOURCES += \
     pywrapper.cpp \
     qpconsole.cpp
 
-INCLUDEPATH += C:/Python/Python38-32/include
+INCLUDEPATH += G:/bin/Python39/include
 
 CONFIG( debug, debug|release ) {
     # debug
     win32-g++ {
-        LIBS += -LC:/Python/Python38-32/libs -lpython38_d
+        LIBS += -LG:/bin/Python39/libs -lpython39_d
     } else:win32-msvc* {
-        LIBS += -LC:/Python/Python38-32/libs -lpython38_d
+        LIBS += -LG:/bin/Python39/libs -lpython39_d
     }
 } else {
     # release
     win32-g++ {
-        LIBS += -LC:/Python/Python38-32/libs -lpython38
+        LIBS += -LG:/bin\Python39/libs -lpython39
     } else:win32-msvc* {
-        LIBS += -LC:/Python/Python38-32/libs -lpython38
+        LIBS += -LG:/bin/Python39/libs -lpython39
     }
 }

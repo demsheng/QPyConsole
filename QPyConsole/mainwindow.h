@@ -3,6 +3,15 @@
 
 #include <QMainWindow>
 
+#include <QMainWindow>
+
+QT_BEGIN_NAMESPACE
+class QAction;
+class QMenu;
+class QPlainTextEdit;
+class QSessionManager;
+QT_END_NAMESPACE
+
 class QPConsole;
 class pyWrapper;
 
@@ -20,5 +29,7 @@ private slots:
 private:
   QPConsole *textEdit;
   pyWrapper* console;
+
+  void createStatusBar();
 };
 #endif // MAINWINDOW_H

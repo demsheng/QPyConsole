@@ -1,3 +1,5 @@
+#include <QtWidgets>
+
 #include "mainwindow.h"
 #include "qpconsole.h"
 #include <QDebug>
@@ -13,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     console = new pyWrapper();
 
     setCentralWidget(textEdit);
+    createStatusBar();
 
     connect(textEdit, SIGNAL(command(QString)), this, SLOT(handleCommand(QString)));
 }
@@ -34,3 +37,9 @@ void MainWindow::handleCommand(QString cmd) {
     textEdit->prepareCommandLine();
 }
 
+//! [32]
+void MainWindow::createStatusBar()
+//! [32] //! [33]
+{
+    statusBar()->showMessage(tr("Ready"));
+}

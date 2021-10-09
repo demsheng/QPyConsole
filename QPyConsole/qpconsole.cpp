@@ -39,10 +39,10 @@ QPConsole::QPConsole(QWidget *parent) :
   setLineWrapMode(QPlainTextEdit::NoWrap);
   setWordWrapMode(QTextOption::NoWrap);
   setBackgroundVisible(false);
-  setFrameStyle(QFrame::NoFrame);
+  //setFrameStyle(QFrame::NoFrame);
   setTabStopDistance(40);
   setAcceptDrops(false);
-  setPrefix("command> ");
+  setPrefix(">>> ");
   setPrefixColor(QColor(140, 255, 50));
   f.setBold(true);
   setPrefixFont(f);
